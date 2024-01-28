@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/RO-Romania-Flag-icon.png" sizes="64x32" type="image/png">
     <title>The Odin Project: Landing Page</title>
 </head>
 <body>
     
+    <!-- Here starts the header section. Even though the first section and the header share
+         background colors and such, I decided to separate them since it would be easier to
+         work with each thing individually than as a whole-->
+
     <div class="header">
         <div class="headerLogo">
             <img src="./images/romanian-flag.png" alt="Logo Image, that is the Romanian Flag.">
@@ -24,17 +29,17 @@
     <div class="firstSection">
         <div>
             <p class="titleFS">Romania's incredible wildlife & landscapes</p>
-            <p class="text">On this page we are going to talk about Romania's breathtaking landscapes & the incredible wildlife it has.</p>
-            <button class="buttonFS">Sign up</button>
+            <p class="textFS">On this page we are going to talk about Romania's breathtaking landscapes & the incredible wildlife it has.</p>
+            <a href="#"><button class="buttonFS">Sign up</button></a>
         </div>
         <div>
-            <img src="./images/romanian-church.jpg" alt="Romanian church besides a lake.">
+            <a href="./images/romanian-church.jpg" target="_blank"><img src="./images/romanian-church.jpg" alt="Romanian church besides a lake."></a>
         </div>
     </div>
 
     <div class="secondSection">
         <div>
-            <p>Here's some pictures of Romanian wildlife and awesome landscapes:</p>
+            <p class="titleSS">Here's some pictures of Romanian wildlife and awesome landscapes:</p>
         </div>
         <div>
             <section>
@@ -59,19 +64,17 @@
     <div class="thirdSection">
         <article>
             <i>"Words are not just words. They are a conveyance of spirit, a language of the soul."</i>
-            <strong>Herta Müller, <i>Nobel Prize-winning Romanian Author</i></strong>
+            <p class="quoteAuthor">Herta Müller, <i>Nobel Prize-winning Romanian Author</i></p>
         </article>
     </div>
 
     <div class="fourthSection">
         <div>
             <article>
-                <p>Want to learn more?</p>
-                <p>Sign up to receive more interesting email about our planet's amazing wildlife and nature.</p>
+                <p class="learnMoreTitle">Want to learn more?</p>
+                <p class="learnMoreText">Sign up to be able to receive more interesting emails about our planet's amazing wildlife and nature.</p>
             </article>
-            <button>
-                Sign up
-            </button>
+            <a href="#"><button class="buttonSignUp" href>Sign up</button></a>
         </div>
     </div>
 
