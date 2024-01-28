@@ -93,26 +93,50 @@ body {
     align-items: center;
 }
 
-.secondSection > div > section > img {
-    max-width: 200px;
-    max-height: auto;
+.infoImage{ 
+    max-width: 300px;
+    height: 300px;
     border-radius: 1cap;
     border: 2px solid royalblue;
+    object-fit: cover;
 }
 
+.infoImage:hover{
+    transition: transform 0.3s ease-out;
+    transform: scale(1.1);
+}
 
 .titleSS {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
     text-align: center;
     display: flex;
+    padding: 64px;
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 64px;
+    padding-bottom: 64px;
+    font-weight: lighter;
 }
 
 .secondSection > div > section {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 8px;
+}
+
+.imageDescription {
+    text-align: justify;
+    padding-top: 16px;
+    max-width: 250px;
 }
 
 .thirdSection{
