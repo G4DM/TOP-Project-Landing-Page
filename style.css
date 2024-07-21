@@ -73,17 +73,19 @@ body {
 }
 
 .firstSection > div > a > img {
+    margin: 25px;
     max-width: 600px;
     max-height: auto;
     border-radius: 1cap;
-    border: 2px solid gray
+    border: 2px solid #3882F6;
+    transition: transform 0.4s ease-in-out
 }
 
 .firstSection > div > a > img:hover {
-    transition: transform 0.3s ease-in;
+    transition: transform 0.4s ease-in-out;
     transform: scale(1.1);
     border-radius: 1.5cap;
-    border: 1px solid gray
+    border: 3px solid #213b66
 }
 
 .secondSection {
@@ -99,11 +101,13 @@ body {
     border-radius: 1cap;
     border: 2px solid royalblue;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out
 }
 
 .infoImage:hover{
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
+    border: 3px solid #3882F6
 }
 
 .titleSS {
@@ -199,11 +203,12 @@ body {
     font-size: 14px;
     background-color: #3882F6;
     padding: 8px 32px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .buttonSignUp:hover,
 .buttonFS:hover{
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-in-out;
     transform: scale(1.2);
     background-color: #213b66;
 }
