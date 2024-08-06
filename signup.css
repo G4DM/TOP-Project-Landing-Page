@@ -1,15 +1,70 @@
-* {
-    text-align: center;
-}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  * {
+    opacity: 0; /* Inicia todos los elementos invisibles */
+    animation: fadeInUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
 
 body {
-    background-color: royalblue;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div {
+    border: 1px solid purple;
+    background-color: rgb(167, 165, 162);
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 8px;
+    width: 50%;
+    border-radius: 1cap;
+    text-align: center;
+}
+
+header {
+    border: 1px solid red;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2px 16px;
+}
+
+form {
+    padding-top: 8px;
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    border: 1px solid brown;
+    padding: 8px;
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid seagreen;
+    width: 100%;
+    padding: 8px 0px;
+    text-indent: 8px;
+    font-size: 16px;
+    border-radius: .3cap;
+}
+
+.inputTexts {
+    font-style: italic;
 }
